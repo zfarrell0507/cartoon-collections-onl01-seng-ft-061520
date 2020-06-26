@@ -28,6 +28,7 @@ def find_the_cheese(cheddar_cheese)
     [cheddar_cheese].all? { |i| (cheese_types).include?(i) }
     puts "#{i}"
   end
+  
 
 roll_call_dwarves(["Doc", "Dopey", "Bashful", "Grumpy"])
 summon_captain_planet(["earth", "wind", "fire", "water", "heart"])
