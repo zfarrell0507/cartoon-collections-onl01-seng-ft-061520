@@ -22,13 +22,16 @@ def long_planeteer_calls(calls_long)
   calls_long.any? { |word| word.length > 4 }
 end
 
-def find_the_cheese(cheddar_cheese)
+cheese_types = ["cheddar", "gouda", "camembert"]
+snacks = ["crackers", "gouda", "thyme"]
+def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-    puts "#{i}" if [cheddar_cheese].all? { |i| (cheese_types).include?(i) }
-    [cheddar_cheese].all? { |i| (cheese_types).include?(i) }
-    puts "#{i}"
-  end
-  
+    array.find do |type|
+    cheese_types.include?(type)
+  end 
+end
+
+find_the_cheese(snacks)
 
 roll_call_dwarves(["Doc", "Dopey", "Bashful", "Grumpy"])
 summon_captain_planet(["earth", "wind", "fire", "water", "heart"])
